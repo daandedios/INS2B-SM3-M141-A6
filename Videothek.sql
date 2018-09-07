@@ -118,3 +118,14 @@ INSERT INTO MEDIUM (Mediumnummer, Videonummer, Art, Regal, Tablar) VALUES
                                                                           (5,1,'VHS','E',1),
                                                                           (6,1,'DVD','B',1),
                                                                           (7,2,'DVD','B',1);
+
+
+ALTER TABLE Kunde ADD COLUMN Temp VARCHAR(50);
+UPDATE Kunde SET Temp = Vorname;
+UPDATE Kunde SET Vorname = Nachname WHERE Kundennummer > 3;
+UPDATE Kunde SET Nachname = Temp WHERE Kundennummer > 3;
+ALTER TABLE Kunde DROP COLUMN Temp;
+
+#Mueller und Miller in Müller korrigieren
+UPDATE Kunde SET Nachname = 'Müller' WHERE Nachname = 'Mueller';
+UPDATE Kunde SET Nachname = 'Müller' WHERE Nachname = 'Miller';
