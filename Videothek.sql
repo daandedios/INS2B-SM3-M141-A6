@@ -5,6 +5,9 @@ Datum: 2018-09-07
 *****************************
 ######################################
 !! Dies sind die Musterlösungen !!
+
+!! WICHTIG: Auf der Linie 96 und 104 muss der Pfad evt noch angepasst werden.
+
 !! Bei Fragen stehe ich euch gerne zu Verfügung: "SQL.dedios@gmail.com" oder per WhatsApp.
 ######################################
 */
